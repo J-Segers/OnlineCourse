@@ -43,6 +43,22 @@ public class Main {
 
         //Here there are 2 ints no Strings therefore they can be added together and the result will be 42
         System.out.println("The result of adding 2 int numbers with a plus operator: " + (13 + 29));
+
+        //One last thing about Strings.
+        //Strings in Java are immutable which means you can't change a String after it has been created.
+        //But it is possible to remove characters from strings, right?
+        //Well technically no because they are immutable that is not possible.
+        //But what happens when we try to change a String after it has been created,
+        //basically a new String gets created and the changes are simply a new String all together.
+        //So here we create a string greeting with some text.
+        String greeting = "Hello, ";
+        //Here we create part 2 of that greeting.
+        String part2 = "World!";
+        //Because String is immutable it takes everything that is on the left of the assigment operator and
+        //overwrites the entire String stored in greeting in the first place with the new longer String.
+        greeting = greeting + part2;
+        System.out.println(greeting);
+
     }
 
 }
